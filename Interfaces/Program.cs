@@ -3,7 +3,7 @@ using System.Globalization;
 using Interfaces.Entities;
 using Interfaces.Services;
 
-namespace Course
+namespace Interfaces
 {
     class Program
     {
@@ -30,7 +30,7 @@ namespace Course
 
             RentalService rentalService = new RentalService(hour, day, new BrazilTaxService());
 
-            rentalService.ProcessInvoice(carRental);
+            rentalService.ProcessingVoice(carRental);
 
             Console.WriteLine("INVOICE:");
             Console.WriteLine(carRental.Invoice);

@@ -24,7 +24,6 @@ namespace Interfaces.Services
         public void ProcessingVoice(CarRental carRental)
         {
             TimeSpan duration = carRental.Finish.Subtract(carRental.Start);
-
             double basicPayment = 0.0;
             if (duration.TotalHours <= 12.0)
             {
